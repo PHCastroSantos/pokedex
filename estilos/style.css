@@ -139,9 +139,9 @@
 .content-display {
     height: 80%;
     width: 90%;
-    background-color: #58595B;
     border-radius: 5px;
     border: 5px solid #BBBBBB;
+    transition: background-color 0.5s ease
 }
 
 .under-display {
