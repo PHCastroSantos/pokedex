@@ -141,7 +141,11 @@
     width: 90%;
     border-radius: 5px;
     border: 5px solid #BBBBBB;
-    transition: background-color 0.5s ease
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
 }
 
 .under-display {
@@ -271,9 +275,15 @@
     border-radius: 0px 0px 10px 10px;
 }
 
+.pokemon {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
-    
+
 }
 
 
