@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 (function turnOff() {
 
   let turnOnOffButton = document.querySelector(".under-display-button");
