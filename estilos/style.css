@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Lemon Milk";
+    src: url(../src/lemon_milk/LEMONMILK-Bold.otf);
+}
+
+@keyframes expand-anim {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.5);
+	}
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -153,6 +168,7 @@
     height: 20%;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .under-display-button {
@@ -165,6 +181,25 @@
     margin-top: 10px;
     box-shadow: 0px 0px 5px 0px black;
     cursor: pointer;
+}
+
+.pokemon-names {
+    width: 50%;
+    height: 80%;
+    background-color: #BBBBBB;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.pokemon-name {
+    font-family: "Lemon Milk";
+    font-size: 20px;
+    color: black;
+    display: none;
 }
 
 .exit {
@@ -233,6 +268,28 @@
     border-radius: 10px;
     border: 2px solid black;
     margin-right: 5px;
+    display: flex;
+}
+
+.type-names {
+    display: none;
+    height: 30%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pokemon-type1 {
+    display: block;
+    font-size: 10px;
+    color: black;
+    font-family: "Lemon Milk";
+}
+
+.pokemon-type2 {
+    display: block;
+    font-size: 10px;
+    color: black;
+    font-family: "Lemon Milk";
 }
 
 .arrow-controls {
@@ -253,6 +310,24 @@
     width: 40px;
     background-color: black;
     border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.mdi--arrow-drop-up {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50%;
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='m7 15l5-5l5 5z'/%3E%3C/svg%3E");
+    cursor: pointer;
+  }
+
+.mdi--arrow-drop-up:hover {
+    animation: expand-anim 0.5s ease 0s 1 normal forwards;
 }
 
 .left-arrow-control {
@@ -260,6 +335,21 @@
     width: 50px;
     background-color: black;
     border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-symbols--arrow-left {
+    display: block;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='m14 17l-5-5l5-5z'/%3E%3C/svg%3E");
+    cursor: pointer;
+  }
+
+.material-symbols--arrow-left:hover {
+    animation: expand-anim 0.5s ease 0s 1 normal forwards;
 }
 
 .right-arrow-control {
@@ -267,6 +357,22 @@
     width: 50px;
     background-color: black;
     border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-symbols--arrow-right {
+    display: block;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M10 17V7l5 5z'/%3E%3C/svg%3E");
+    cursor: pointer;
+  }
+
+.material-symbols--arrow-right:hover {
+    animation: expand-anim 0.5s ease 0s 1 normal forwards;
 }
 
 .down-arrow-control {
@@ -274,11 +380,27 @@
     width: 40px;
     background-color: black;
     border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mdi--arrow-down-drop {
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='m7 10l5 5l5-5z'/%3E%3C/svg%3E");
+    height: 100%;
+    width: 100%;
+    margin-top: 15%;
+    cursor: pointer;
+  }
+
+.mdi--arrow-down-drop:hover {
+    animation: expand-anim 0.5s ease 0s 1 normal forwards;
 }
 
 .pokemon {
     position: absolute;
-    width: 200px;
+    width: 120px;
     display: none;
 }
 
