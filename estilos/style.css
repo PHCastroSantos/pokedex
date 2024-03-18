@@ -37,8 +37,8 @@
 }
 
 .pokedex {
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 700px;
     background-color: #D2232A;
     border-radius: 20px;
     border: 3px solid black;
@@ -58,8 +58,8 @@
 }
 
 .button {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: #00AEEF;
     border-radius: 50px;
     border: 3px solid black;
@@ -68,8 +68,8 @@
 }
 
 .button:nth-child(2) {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: red;
     border-radius: 50px;
     border: 3px solid black;
@@ -77,8 +77,8 @@
 }
 
 .button:nth-child(3) {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: yellow;
     border-radius: 50px;
     border: 3px solid black;
@@ -86,8 +86,8 @@
 }
 
 .button:nth-child(4) {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: green;
     border-radius: 50px;
     border: 3px solid black;
@@ -178,7 +178,6 @@
     border-radius: 50px;
     border: 3px solid black;
     margin-left: 50px;
-    margin-top: 10px;
     box-shadow: 0px 0px 5px 0px black;
     cursor: pointer;
 }
@@ -225,8 +224,8 @@
 }
 
 .control-button {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: #58595B;
     border-radius: 50px;
     margin: 5px 20px 5px 35px;
@@ -236,20 +235,19 @@
 
 .rb-buttons {
     width: 70px;
-    height: 20px;
+    height: 15px;
     background-color: #00A79D;
     border: 3px solid black;
     border-radius: 20px;
-    margin-top: 30px;
-    margin-left: 25px;
+    margin-top: 40px;
 }
 
 .rb-buttons:nth-child(2) {
     width: 70px;
-    height: 20px;
+    height: 15px;
     background-color: #ED1C24;
     border: 3px solid black;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .under-buttons {
@@ -296,8 +294,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: -60px;
-    margin-right: 5px;
+    margin-top: -50px;
+    margin-right: 0px;
 }
 
 .up-and-down-arrow {
@@ -306,8 +304,8 @@
 }
 
 .up-arrow-control{
-    height: 90px;
-    width: 40px;
+    height: 85px;
+    width: 35px;
     background-color: black;
     border-radius: 10px 10px 0px 0px;
     display: flex;
@@ -331,8 +329,8 @@
 }
 
 .left-arrow-control {
-    height: 40px;
-    width: 50px;
+    height: 35px;
+    width: 45px;
     background-color: black;
     border-radius: 10px 0px 0px 10px;
     display: flex;
@@ -353,8 +351,8 @@
 }
 
 .right-arrow-control {
-    height: 40px;
-    width: 50px;
+    height: 35px;
+    width: 45px;
     background-color: black;
     border-radius: 0px 10px 10px 0px;
     display: flex;
@@ -376,8 +374,8 @@
 }
 
 .down-arrow-control {
-    height: 50px;
-    width: 40px;
+    height: 45px;
+    width: 35px;
     background-color: black;
     border-radius: 0px 0px 10px 10px;
     display: flex;
