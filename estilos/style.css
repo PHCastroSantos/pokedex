@@ -27,7 +27,7 @@
     background-position: center;
 }
 
-.blur-overlay {
+.blur-overlay { 
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
@@ -37,8 +37,8 @@
 }
 
 .pokedex {
-    width: 25%;
-    height: 80%;
+    width: 500px;
+    height: 800px;
     background-color: #D2232A;
     border-radius: 20px;
     border: 3px solid black;
@@ -197,7 +197,7 @@
 
 .pokemon-name {
     font-family: "Lemon Milk";
-    font-size: 20px;
+    font-size: 0.4%;
     color: black;
     display: none;
 }
@@ -241,7 +241,7 @@
     border: 3px solid black;
     border-radius: 20px;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .rb-buttons:nth-child(2) {
@@ -297,7 +297,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: -60px;
-    margin-right: -5px;
+    margin-right: 5px;
 }
 
 .up-and-down-arrow {
@@ -404,17 +404,116 @@
     display: none;
 }
 
+@media (max-width: 428px) {
 
-@media only screen and (max-width: 600px) {
+    .pokedex {
+        width: 350px;
+        height: 600px;
+        background-color: #D2232A;
+        border-radius: 20px;
+        border: 3px solid black;
+        box-shadow: 0px 0px 20px 0px black;
+    }
 
-}
+    .buttons {
+        display: flex;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    
+    .button {
+        width: 60px;
+        height: 60px;
+        background-color: #00AEEF;
+        border-radius: 50px;
+        border: 3px solid black;
+        box-shadow: 0px 0px 0px 10px white;
+        margin-left: 20px;
+    }
+    
+    .button:nth-child(2) {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .button:nth-child(3) {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .button:nth-child(4) {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .line {
+        width: 100%;
+        height: 10px;
+    }
+
+    .under-display-button {
+        width: 40px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    
+    .control-button {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
 
 
+    .up-arrow-control{
+        height: 60px;
+        width: 30px;
+    }
 
+    .left-arrow-control {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .right-arrow-control {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .material-symbols--arrow-right {
+        margin-left: 0px;
+      }
 
+    .down-arrow-control {
+        height: 30px;
+        width: 30px;
+        flex-direction: row;
+    }
 
+    .green-screen {
+        margin-right: 5px;
+        margin-left: -20px;
+    }
 
+    .rb-buttons {
+        width: 70px;
+        height: 15px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
 
+    .rb-buttons:nth-child(2) {
+        width: 70px;
+        height: 15px;
+        margin-top: 30px;
+    }
+    
 
+  }
