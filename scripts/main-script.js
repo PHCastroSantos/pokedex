@@ -23,18 +23,165 @@ const renderPokemon = async(pokemon) => {
 
   pokemonName.innerHTML = data.name;
   pokemonPic.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-  pokemonType1.innerHTML = data['types']['0']['type']['name'];
-  pokemonType2.innerHTML = data['types']['1']['type']['name'];
+  let type1 = pokemonType1.innerHTML = data['types']['0']['type']['name'];
+  //let type2 = pokemonType2.innerHTML = data['types']['1']['type']['name'];
+  let type2 = pokemonType2.innerHTML = data['types'].length > 1 ? data['types']['1']['type']['name'] : undefined
 
-  if(pokemonType1.innerHTML = data['types']['0']['type']['name'] === "grass") {
+  if(type1 === "grass"){
     pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--high-grass'></span>";
   }
 
-  if(pokemonType2.innerHTML = data['types']['1']['type']['name'] === "poison") {
+  if(type2 === "grass") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--high-grass'></span>";
+  }
+
+  if(type1 === "poison") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--poison'></span>";
+  }
+
+  if(type2 === "poison") {
     pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--poison'></span>";
   }
 
+  if(type1 === "fire" || type2 === "fire") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--fire'></span>";
+  }
+
+  if(type2 === "fire") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--fire'></span>";
+  }
+
+  if(type1 === "flying") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--liberty-wing'></span>";
+  }
+
+  if(type2 === "flying") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--liberty-wing'></span>";
+  }
+
+  if(type1 === "water") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='emojione-monotone--water-wave'></span>"
+  }
+
+  if(type2 === "water") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='emojione-monotone--water-wave'></span>"
+  }
+
+  if(type1 === "bug") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--bug'></span>"
+  }
+
+  if(type2 === "bug") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--bug'></span>"
+  }
+
+  if(type1 === "electric") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--electric'></span>"
+  }
+
+  if(type2 === "electric") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--electric'></span>"
+  }
+
+  if(type1 === "ground") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--ground-sprout'></span>"
+  }
+
+  if(type2 === "ground") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--ground-sprout'></span>"
+  }
+
+  if(type1 === "fairy") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--fairy-wings'></span>"
+  }
+
+  if(type2 === "fairy") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--fairy-wings'></span>"
+  }
+
+  if(type1 === "fighting") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--punch'></span>"
+  }
+
+  if(type2 === "fighting") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--punch'></span>"
+  }
+
+  if(type1 === "psychic") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--psychic-waves'></span>"
+  }
+
+  if(type2 === "psychic") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--psychic-waves'></span>"
+  }
+
+  if(type1 === "rock") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--rock'></span>"
+  }
+
+  if(type2 === "rock") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--rock'></span>"
+  }
+
+  if(type1 === "steel") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--steel-claws'></span>"
+  }
+
+  if(type2 === "steel") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='game-icons--steel-claws'></span>"
+  }
   
+  if(type1 === "ice") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='arcticons--icebox'></span>"
+  }
+
+  if(type2 === "ice") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='arcticons--icebox'></span>"
+  }
+
+  if(type1 === "ghost") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--ghost'></span>"
+  }
+
+  if(type2 === "ghost") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='mdi--ghost'></span>"
+  }
+
+  if(type1 === "dragon") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='fa6-solid--dragon'></span>"
+  }
+
+  if(type2 === "dragon") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='fa6-solid--dragon'></span>"
+  }
+
+  if(type1 === "dark") {
+    pokemonType1.innerHTML = "<span style='width: 30px; height: 30px' class='circum--dark'></span>"
+  }
+
+  if(type2 === "dark") {
+    pokemonType2.innerHTML = "<span style='width: 30px; height: 30px' class='circum--dark'></span>"
+  }
+
+
+
+
+  if(type2 === undefined){
+    pokemonType2.innerHTML = "";
+    typeNames.style.justifyContent = "center";
+  } else {
+    typeNames.style.justifyContent = "space-evenly";
+  }
+
+  if(type1 === "normal" || type2 === "normal") {
+    pokemonType1.innerHTML = "Normal";
+    typeNames.style.alignItems = "center";
+  }
+
+  console.log(type1)
+  console.log(type2)
+
+
 }
 
 
